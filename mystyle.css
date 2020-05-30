@@ -1,0 +1,37 @@
+.hover_girl_img{
+    color: white;
+    text-decoration: none;
+    display: none;
+    text-align: justify;
+    position: absolute;
+    width: 89%;
+    height: 100%;
+    top: 0;
+    background-color: #1d2124;
+    opacity: 0.7;
+    padding: 15px;
+}
+
+/*.hover_girl_text{*/
+/*    width: 79%;*/
+/*    text-align: justify;*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    padding: 10px 0 0 10px;*/
+/*    top: 0;*/
+/*}*/
+.img-thumbnail:hover +.hover_girl_img {
+    display: grid;
+}
+.girlImg{
+    width: 100%;
+    height: auto;
+}
+.imgHover:hover{
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #c800b8;
+    opacity: 0.8;
+}
+.footer{
+}
