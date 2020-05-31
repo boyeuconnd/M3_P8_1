@@ -1,37 +1,46 @@
-.hover_girl_img{
-    color: white;
-    text-decoration: none;
-    display: none;
-    text-align: justify;
-    position: absolute;
-    width: 89%;
-    height: 100%;
-    top: 0;
-    background-color: #1d2124;
-    opacity: 0.7;
-    padding: 15px;
-}
 
-/*.hover_girl_text{*/
-/*    width: 79%;*/
-/*    text-align: justify;*/
-/*    display: none;*/
-/*    position: absolute;*/
-/*    padding: 10px 0 0 10px;*/
-/*    top: 0;*/
-/*}*/
-.img-thumbnail:hover +.hover_girl_img {
-    display: grid;
-}
 .girlImg{
     width: 100%;
-    height: auto;
+    height: 100%;
+    /*display: block;*/
+    /*object-fit: fill;*/
 }
-.imgHover:hover{
+.girlcontainer{
+    /*position: relative;*/
+    /*border: 1px deeppink;*/
+    border-radius:5px ;
+    border-style: ridge;
+    border-color: lightpink;
+    width:100%
+}
+.girl_img_overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #0f0f10;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.overlay_text{
+    color: #ffffff;
+    font-size: 17px;
     font-weight: bold;
-    text-decoration: none;
-    background-color: #c800b8;
-    opacity: 0.8;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
 }
-.footer{
+.girlcontainer:hover .girl_img_overlay{
+    opacity: 0.5;
+    height: 100%;
 }
+
+
+
+
+
